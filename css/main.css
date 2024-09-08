@@ -1,0 +1,9 @@
+body{
+    background-image: url("../images/pexels-asadphoto-1450360.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom center;
+    background-attachment: fixed;
+    height: 120vh;
+    background-blend-mode: multiply;
+}
