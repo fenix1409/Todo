@@ -22,10 +22,11 @@
             <input class="border-[1px] hidden border-slate-500 rounded-md" type="file" name="todoImage" accept="image/*" onchange="showImagePreview(event)">
         </label>
         <div id="imagePreview" class="flex items-center gap-2 py-2 hidden">
-            <img src="" id="selectedImage" class="max-w-[100px] rounded-md" alt="Selected Image">
+            <img class="flex" src="" id="selectedImage" class="max-w-[100px] rounded-md" alt="Selected Image">
         </div>
         <button class="bg-green-500 text-white font-semibold p-2 w-full rounded-md" type="submit">Add</button>
     </form>
+    
     
     <div class="my-10 ml-[580px]">
         <button onclick="handleAllClickBtn()" class="all-btn inline-block bg-green-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600 transition duration-300">
@@ -36,11 +37,16 @@
             <span class="text-sm">Completed</span>
             <strong class="text-lg ml-2">0</strong>
         </button>     
-        <button onclick="handleUncompletedClickBtn()" class="uncompleted-btn inline-block bg-red-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-red-600 transition duration-300">
+        <button onclick="handleUncompletedClickBtn()" class="uncompleted-btn inline-block bg-yellow-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-yellow-600 transition duration-300">
             <span class="text-sm">Uncompleted</span>
             <strong class="text-lg ml-2">0</strong>
         </button>    
     </div>
+    <button onclick="handleDeleteAllClickBtn()" class="delete-all-btn block mx-auto bg-red-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-red-600 transition duration-300">
+        <span class="text-sm">Delete All</span>
+    </button>
+    
+
     
     <ul class="todo-list w-[450px] space-y-[10px] bg-white p-5 rounded-md mx-auto mt-5">
         
